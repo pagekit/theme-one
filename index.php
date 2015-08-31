@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'one',
+    'name' => 'theme-one',
 
     'type' => 'theme',
 
