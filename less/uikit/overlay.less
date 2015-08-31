@@ -9,6 +9,8 @@
 
 @overlay-panel-color:                           @global-contrast-color;
 
+@overlay-icon:                                  "";
+@overlay-icon-size:                             34px;
 @overlay-icon-color:                            @global-contrast-color;
 
 
@@ -33,7 +35,11 @@
 // Sub-object `uk-overlay-icon`
 // ========================================================================
 
-.hook-overlay-icon() {}
+.hook-overlay-icon() {
+    height: 34px;
+    width: 34px;
+    background: url("@{global-image-path}/plus.svg") 0 0 no-repeat;
+}
 
 
 // Miscellaneous
