@@ -1,0 +1,3 @@
+**/app/bundle/**/*.js
+/css/*
+.DS_Store
