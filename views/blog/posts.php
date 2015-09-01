@@ -17,7 +17,7 @@
 
         <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
 
-        <div class="uk-margin-top">
+        <div class="uk-margin-large-top">
             <ul class="uk-subnav">
 
                 <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
