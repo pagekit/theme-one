@@ -46,11 +46,6 @@
     <?php if ($total > 1) : ?>
     <ul class="uk-pagination">
 
-        <?php if ($page > 1) : ?>
-        <li class="uk-pagination-previous">
-            <a href="<?= $view->url('@blog/page', ['page' => $page - 1]) ?>"><?= __('Newer posts') ?></a>
-        </li>
-        <?php endif ?>
 
         <?php for($i=1;$i<=$total;$i++): ?>
             <?php if ($i <= ($pageIndex+$range) && $i >= ($pageIndex-$range)): ?>
@@ -63,14 +58,23 @@
                 <li>
                 <?php endif; ?>
 
+            <?php elseif($i==1): ?>
+
+                <li>
+                    <a href="<?= $view->url('@blog/page', ['page' => 1]) ?>">1</a>
+                </li>
+                <li><span>...</span></li>
+
+            <?php elseif($i==$total): ?>
+
+                <li><span>...</span></li>
+                <li>
+                    <a href="<?= $view->url('@blog/page', ['page' => $total]) ?>"><?=$total?></a>
+                </li>
+
             <?php endif; ?>
         <?php endfor; ?>
 
-        <?php if ($page < $total) : ?>
-        <li class="uk-pagination-next">
-            <a href="<?= $view->url('@blog/page', ['page' => $page + 1]) ?>"><?= __('Older posts') ?></a>
-        </li>
-        <?php endif ?>
 
     </ul>
     <?php endif ?>
