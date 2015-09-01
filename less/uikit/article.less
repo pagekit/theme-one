@@ -7,7 +7,7 @@
 // Variables
 // ========================================================================
 
-@article-margin-top:                            100px;
+@article-margin-top:                            80px;
 
 @article-title-font-size:                       round((@global-font-size * 2.6)); // 36px / 42px
 @article-title-line-height:                     round((@article-title-font-size * 1.154)); // 42px / 48px
@@ -72,7 +72,7 @@
 
     .uk-article-title a:hover { border-bottom: 1px solid @global-color; }
 
-    .uk-article .uk-subnav > * >:hover,
-    .uk-article .uk-subnav > * >:focus { text-decoration: underline; }
+    .uk-article .uk-subnav a:not(.uk-button):hover,
+    .uk-article .uk-subnav a:not(.uk-button):focus { text-decoration: underline; }
 
 }
