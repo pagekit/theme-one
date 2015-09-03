@@ -2,8 +2,14 @@
 
 <article class="uk-article tm-container-small">
 
-    <?php if ($image = $post->get('image')): ?>
-    <img src="<?= $image ?>">
+    <?php
+
+        $imageSrc = $post->get('image.src');
+        $imageAlt = $post->get('image.alt');
+    ?>
+
+    <?php if ($imageSrc): ?>
+    <img src="<?= $imageSrc ?>" alt="<?= $imageAlt ?>">
     <?php endif ?>
 
     <h1 class="uk-article-title"><?= $post->title ?></h1>

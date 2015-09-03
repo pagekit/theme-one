@@ -5,8 +5,16 @@
     <?php foreach ($posts as $post) : ?>
     <article class="uk-article">
 
-        <?php if ($image = $post->get('image')): ?>
-        <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?=$image?>"></a>
+        <?php
+
+            $image = $post->get('image');
+
+            $imageSrc = $post->get('image.src');
+            $imageAlt = $post->get('image.alt');
+        ?>
+
+        <?php if ($imageSrc): ?>
+        <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?=$imageSrc?>" alt="<?=$imageAlt?>"></a>
         <?php endif ?>
 
         <h1 class="uk-article-title"><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h1>
