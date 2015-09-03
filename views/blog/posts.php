@@ -21,7 +21,7 @@
             <ul class="uk-subnav">
 
                 <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
-                <li><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Continue Reading') ?></a></li>
+                <li><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a></li>
                 <?php endif ?>
 
                 <?php if ($post->isCommentable() || $post->comment_count) : ?>
