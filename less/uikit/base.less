@@ -42,9 +42,10 @@
 
 @base-hr-border:                                @global-border;
 
-@base-blockquote-border:                        @global-border;
+@base-blockquote-border:                        @global-dark-color;
+@base-blockquote-border-width:                  1px;
 @base-blockquote-font-size:                     round((@global-font-size * 1.14)); // 18px
-@base-blockquote-line-height:                   round((@base-blockquote-font-size * 1.36)); // 24px
+@base-blockquote-line-height:                   round((@base-blockquote-font-size * 1.55)); // 28px
 
 @base-code-color:                               #f0615c;
 @base-code-font-size:                           12px;
@@ -111,4 +112,11 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-base-misc() {}
+.hook-base-misc() {
+
+    blockquote {
+        color: @global-dark-color;
+        font-weight: 300;
+    }
+
+}
