@@ -1,2 +1,3 @@
-# theme-one
-One Theme
+# One Theme
+
+Pagekit's default theme.

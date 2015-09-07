@@ -3,7 +3,7 @@
     "type": "pagekit-theme",
     "version": "0.9.0",
     "title": "One",
-    "description": "Pagekit Theme",
+    "description": "Pagekit's default theme.",
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +13,6 @@
         }
     ],
     "extra": {
-        "image": "theme.jpg"
+        "image": "image.jpg"
     }
 }
