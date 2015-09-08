@@ -23,6 +23,8 @@
 
                         <?php if ($params['logo_contrast']) : ?>
                         <img class="tm-logo-contrast" src="<?= $this->escape($params['logo_contrast']) ?>" alt="">
+                        <?php else : ?>
+                        <img class="tm-logo-contrast" src="<?= $this->escape($params['logo']) ?>" alt="">
                         <?php endif ?>
 
                     </a>
