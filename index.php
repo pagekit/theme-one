@@ -113,8 +113,7 @@ return [
             }
 
             $classes = [
-                'navbar' => 'tm-navbar',
-                'hero' => ''
+                'navbar' => 'tm-navbar'
             ];
 
             $sticky = [
