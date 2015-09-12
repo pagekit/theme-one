@@ -79,4 +79,4 @@
     </ul>
     <?php endif ?>
 
-</div>
+</article>
