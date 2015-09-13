@@ -113,7 +113,8 @@ return [
             }
 
             $classes = [
-                'navbar' => 'tm-navbar'
+                'navbar' => 'tm-navbar',
+                'hero' => '',
             ];
 
             $sticky = [
@@ -123,7 +124,7 @@ return [
             ];
 
             if ($event['hero_viewport']) {
-                $classes['hero'] = 'tm-hero-height';
+                $classes['hero'] .= 'tm-hero-height';
             }
 
             // Sticky overlay navbar if hero position exists
