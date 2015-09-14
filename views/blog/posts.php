@@ -1,6 +1,6 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
 
-<article class="tm-container-small">
+<div class="tm-container-small">
 
     <?php foreach ($posts as $post) : ?>
     <article class="uk-article">
