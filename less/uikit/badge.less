@@ -9,9 +9,9 @@
 
 @badge-background:                              @global-primary-background;
 @badge-padding-horizontal:                      15px;
-@badge-font-size:                               round((@global-font-size * 0.78)); // 11px / 12px
+@badge-font-size:                               12px;
 @badge-font-weight:                             600;
-@badge-line-height:                             round((@badge-font-size * 2)); // 22px / 24px
+@badge-line-height:                             34px;
 @badge-color:                                   @global-contrast-color;
 @badge-text-transform:                          uppercase;
 @badge-hover-color:                             @global-contrast-color;
@@ -23,17 +23,11 @@
 @badge-warning-background:                      @global-warning-background;
 @badge-danger-background:                       @global-danger-background;
 
-//
-// New
-//
-
-@badge-padding-vertical:                         5px;
-
 
 // Component
 // ========================================================================
 
-.hook-badge() { padding: @badge-padding-vertical @badge-padding-horizontal; }
+.hook-badge() {}
 
 
 // Color modifier

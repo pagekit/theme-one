@@ -73,7 +73,12 @@
 
 }
 
-.hook-contrast-button-hover() { border-color: @contrast-button-hover-border; }
+.hook-contrast-button-hover() {
+
+    &:not(.uk-button-primary) { border-color: @contrast-button-hover-border; }
+
+}
+
 .hook-contrast-button-active() {}
 .hook-contrast-button-primary() {}
 
