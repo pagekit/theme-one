@@ -61,7 +61,6 @@
 
         props: ['widget', 'config'],
 
-
         created: function () {
             this.$set('panelOptions', [
                 {value: 'uk-panel-box', text: this.$trans('Box')},
@@ -73,6 +72,6 @@
 
     };
 
-    window.Widgets.components['widget-theme'] = module.exports;
+    window.Widgets.components['theme'] = module.exports;
 
 </script>
