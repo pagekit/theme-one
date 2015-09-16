@@ -21,11 +21,7 @@
 
                         <img class="tm-logo" src="<?= $this->escape($params['logo']) ?>" alt="">
 
-                        <?php if ($params['logo_contrast']) : ?>
-                        <img class="tm-logo-contrast" src="<?= $this->escape($params['logo_contrast']) ?>" alt="">
-                        <?php else : ?>
-                        <img class="tm-logo-contrast" src="<?= $this->escape($params['logo']) ?>" alt="">
-                        <?php endif ?>
+                        <img class="tm-logo-contrast" src="<?= ($params['logo_contrast']) ? $this->escape($params['logo_contrast']) : $this->escape($params['logo']) ?>" alt="">
 
                     </a>
                     <?php endif ?>
