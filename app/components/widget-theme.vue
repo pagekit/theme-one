@@ -5,7 +5,7 @@
         <div class="uk-form-row">
             <span class="uk-form-label">{{ 'Title' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" value="center-content" v-model="widget.theme.title_hide"> {{ 'Hide Title' | trans }}</label>
+                <label><input type="checkbox" v-model="widget.theme.title_hide"> {{ 'Hide Title' | trans }}</label>
             </div>
         </div>
 
@@ -26,7 +26,7 @@
         <div class="uk-form-row">
             <span class="uk-form-label">{{ 'Alignment' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" value="center-content" v-model="widget.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
+                <label><input type="checkbox" v-model="widget.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
             </div>
         </div>
 
