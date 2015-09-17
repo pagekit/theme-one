@@ -33,7 +33,7 @@
         <div class="uk-form-row">
             <span class="uk-form-label">{{ 'Sidebar' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" v-model="node.theme['sidebar_first']"> {{ 'Show the sidebar before the content.' | trans }}</label>
+                <label><input type="checkbox" v-model="node.theme.sidebar_first"> {{ 'Show the sidebar before the content.' | trans }}</label>
             </div>
         </div>
 
@@ -41,15 +41,15 @@
             <label class="uk-form-label">{{ 'Hero Image' | trans }}</label>
             <div class="uk-form-controls uk-form-controls-text">
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="node.theme['hero_viewport']"> {{ 'Full viewport height' | trans }}</label>
+                    <label><input type="checkbox" v-model="node.theme.hero_viewport"> {{ 'Full viewport height' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="node.theme['hero_contrast']"> {{ 'Invert colors' | trans }}</label>
+                    <label><input type="checkbox" v-model="node.theme.hero_contrast"> {{ 'Invert colors' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed uk-margin-bottom">
-                    <label><input type="checkbox" v-model="node.theme['navbar_transparent']"> {{ 'Transparent navbar as overlay' | trans }}</label>
+                    <label><input type="checkbox" v-model="node.theme.navbar_transparent"> {{ 'Transparent navbar as overlay' | trans }}</label>
                 </p>
-                <p class="uk-form-controls-condensed uk-form-width-large"><input-image source="{{@ node.theme['hero_image'] }}"></input-image></p>
+                <p class="uk-form-controls-condensed uk-form-width-large"><input-image source="{{@ node.theme.hero_image }}"></input-image></p>
                 <p class="uk-form-help-block">{{ 'Select a background image for the hero position.' | trans }}</p>
             </div>
         </div>
