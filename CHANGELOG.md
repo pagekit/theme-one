@@ -1,5 +1,9 @@
 # Changelog
 
+### WIP
+
+- Added missing meta data in post view
+
 ### 0.9.1 (September 14, 2015)
 
 - Fixed undefined index `hero`
