@@ -1,14 +1,16 @@
 # Changelog
 
-### WIP
+## WIP
 
-- Added missing meta data in post view
+### Added
+- Missing meta data in post view
 
-### 0.9.1 (September 14, 2015)
+## 0.9.1 (September 14, 2015)
 
-- Fixed undefined index `hero`
-- Fixed blog markup
+### Fixed
+- Undefined index `hero`
+- Blog markup
 
-### 0.9.0 (September 10, 2015)
+## 0.9.0 (September 10, 2015)
 
 - Initial release
