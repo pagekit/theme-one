@@ -5,6 +5,9 @@
 ### Added
 - Missing meta data in post view
 
+### Fixed
+- Fixed widget html class
+
 ## 0.9.1 (September 14, 2015)
 
 ### Fixed
