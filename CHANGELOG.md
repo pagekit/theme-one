@@ -6,7 +6,8 @@
 - Missing meta data in post view
 
 ### Fixed
-- Fixed widget html class
+- Widget html class
+- Date conversion to ISO8601 in blog views
 
 ## 0.9.1 (September 14, 2015)
 
