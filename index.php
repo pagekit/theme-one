@@ -4,18 +4,6 @@ return [
 
     'name' => 'theme-one',
 
-    'type' => 'theme',
-
-    /**
-     * Resources
-     */
-    'resources' => [
-
-        'theme:' => '',
-        'views:' => 'views'
-
-    ],
-
     /**
      * Menu positions
      */
