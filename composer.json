@@ -1,7 +1,7 @@
 {
     "name": "pagekit/theme-one",
     "type": "pagekit-theme",
-    "version": "0.9.2",
+    "version": "0.9.3",
     "title": "One",
     "description": "Pagekit's default theme.",
     "license": "MIT",
@@ -14,5 +14,8 @@
     ],
     "extra": {
         "image": "image.jpg"
+    },
+    "archive": {
+        "exclude": ["!/css"]
     }
 }

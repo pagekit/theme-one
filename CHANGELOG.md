@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.3 (October 16, 2015)
+
+### Fixed
+- Missing css folder
+
 ## 0.9.2 (October 14, 2015)
 
 ### Added
