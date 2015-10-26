@@ -5,6 +5,9 @@
 ### Changed
 - UIkit theme: alert colors, close + overlay icons, accordion style
 
+### Removed
+- Text centering in footer
+
 ## 0.9.3 (October 16, 2015)
 
 ### Fixed

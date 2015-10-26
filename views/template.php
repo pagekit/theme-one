@@ -104,7 +104,7 @@
 
         <?php if ($view->position()->exists('footer')) : ?>
         <div id="tm-footer" class="tm-footer uk-block uk-block-secondary uk-contrast">
-            <div class="uk-container uk-container-center uk-text-center">
+            <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
                     <?= $view->position('footer', 'position-grid.php') ?>
