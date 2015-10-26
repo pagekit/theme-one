@@ -9,8 +9,8 @@
 
 @alert-margin-vertical:                         @global-margin;
 
-@alert-background:                              #e1f2fb;
-@alert-color:                                   #4091D2;
+@alert-background:                              @global-default-background;
+@alert-color:                                   @global-color;
 
 @alert-success-background:                      #ecf7e9;
 @alert-success-color:                           #80c96d;
@@ -49,4 +49,9 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-alert-misc() {}
+.hook-alert-misc() {
+
+    .uk-alert .uk-close { opacity: 0.2; }
+    .uk-alert .uk-close:hover { opacity: 1; }
+
+}

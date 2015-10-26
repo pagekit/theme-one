@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Changed
+- UIkit theme: alert colors, close + overlay icons, accordion style
+
 ## 0.9.3 (October 16, 2015)
 
 ### Fixed
