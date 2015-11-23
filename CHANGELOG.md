@@ -9,6 +9,7 @@
 - Optimized close button and added better support for modal dialog blank
 - Added tab style for contrast
 - Rounded comment avatars
+- Smaller badges
 - Minor tweaks for alert, dropdown and icon
 
 ### Removed
