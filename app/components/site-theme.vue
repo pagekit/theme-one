@@ -33,23 +33,7 @@
             priority: 15
         },
 
-        data: function () {
-            return window.$theme;
-        },
-
-        events: {
-
-            save: function() {
-
-                var config = _.omit(this.config, ['positions', 'menus', 'widget']);
-
-                this.$http.post('admin/system/settings/config', {name: this.name, config: config}).error(function (data) {
-                    this.$notify(data, 'danger');
-                });
-
-            }
-
-        }
+        props: ['config']
 
     };
 
