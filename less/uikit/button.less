@@ -17,9 +17,9 @@
 @button-small-line-height:                      @global-height-small - 2;
 @button-large-line-height:                      @global-height-large - 2;
 
-@button-mini-font-size:                         round((@global-font-size * 0.85)); // 14px
-@button-small-font-size:                        round((@global-font-size * 0.85)); // 14px
-@button-large-font-size:                        round((@global-font-size * 1.14)); // 18px
+@button-mini-font-size:                         round((@global-font-size * 0.85)); // 12px / 14px
+@button-small-font-size:                        round((@global-font-size * 0.85)); // 12px / 14px
+@button-large-font-size:                        round((@global-font-size * 1.14)); // 16px / 18px
 
 @button-padding-horizontal:                     25px;
 @button-mini-padding-horizontal:                8px;
@@ -68,8 +68,8 @@
 
 .hook-button() {
     border: 1px solid lighten(@button-color, 10%);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .hook-button-hover() { border-color: lighten(@button-hover-color, 10%); }
@@ -120,7 +120,7 @@
 // Modifier: `uk-button-link`
 // ========================================================================
 
-.hook-button-link() {}
+.hook-button-link() { padding: 0; }
 
 
 // Size modifiers

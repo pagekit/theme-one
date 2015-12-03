@@ -3,7 +3,14 @@
 ## WIP
 
 ### Changed
-- UIkit theme: alert colors, close + overlay icons, accordion style
+- Nicer code and blockquotes style
+- Better block-large padding for large screens
+- Updated button font-size and transition
+- Optimized close button and added better support for modal dialog blank
+- Added tab style for contrast
+- Rounded comment avatars
+- Smaller badges
+- Minor tweaks for alert, dropdown and icon
 
 ### Removed
 - Text centering in footer

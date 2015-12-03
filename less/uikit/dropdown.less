@@ -12,6 +12,8 @@
 @dropdown-padding:                              25px;
 @dropdown-background:                           #fff;
 @dropdown-color:                                @global-color;
+@dropdown-font-size:                            14px;
+
 @dropdown-divider-border:                       @global-border;
 
 @dropdown-small-padding:                        @dropdown-padding;
@@ -25,7 +27,10 @@
 // Component
 // ========================================================================
 
-.hook-dropdown() { box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.hook-dropdown() {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    line-height: 20px;
+}
 
 
 // Modifier: `uk-dropdown-navbar`
