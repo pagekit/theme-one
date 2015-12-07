@@ -15,6 +15,7 @@
 
 @base-link-color:                               @global-link-color;
 @base-link-hover-color:                         @global-link-hover-color;
+@base-code-font-family:                         "Roboto Mono", Consolas, monospace, serif;
 @base-em-color:                                 #f0615c;
 @base-ins-background:                           #ffd;
 @base-ins-color:                                @global-color;
@@ -42,15 +43,16 @@
 
 @base-hr-border:                                @global-border;
 
-@base-blockquote-border:                        @global-dark-color;
-@base-blockquote-border-width:                  1px;
+@base-blockquote-padding-left:                  0;
+@base-blockquote-border-width:                  0;
 @base-blockquote-font-size:                     round((@global-font-size * 1.14)); // 18px
 @base-blockquote-line-height:                   round((@base-blockquote-font-size * 1.55)); // 28px
 
 @base-code-color:                               #f0615c;
 @base-code-font-size:                           12px;
 
-@base-pre-background:                           #fafafa;
+@base-pre-padding:                              30px;
+@base-pre-background:                           @global-background;
 @base-pre-color:                                @global-color;
 @base-pre-font-size:                            12px;
 @base-pre-line-height:                          18px;
@@ -60,7 +62,6 @@
 //
 
 @base-code-border:                              @global-border;
-@base-code-background:                          #fafafa;
 @base-pre-border:                               @global-border;
 
 
@@ -73,19 +74,28 @@
 }
 
 
+// Links
+// ========================================================================
+
+.hook-base-link() {}
+
+.hook-base-link-hover() {}
+
+
 // Text-level semantics
 // ========================================================================
 
 .hook-base-code() {
-    padding: 2px 4px;
+    padding: 1px 6px 3px 6px;
     border: 1px solid @base-code-border;
     border-radius: 3px;
-    background: @base-code-background;
 }
 
 
 // Headings
 // ========================================================================
+
+.hook-base-h() {}
 
 .hook-base-h1() {}
 
@@ -100,6 +110,21 @@
 .hook-base-h6() { font-weight: normal; }
 
 
+// Horizontal rules
+// ========================================================================
+
+.hook-base-hr() {}
+
+
+// Blockquotes
+// ========================================================================
+
+.hook-base-blockquote() {
+    color: @global-dark-color;
+    text-align: center;
+}
+
+
 // Preformatted text
 // ========================================================================
 
@@ -112,11 +137,4 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-base-misc() {
-
-    blockquote {
-        color: @global-dark-color;
-        font-weight: 300;
-    }
-
-}
+.hook-base-misc() {}

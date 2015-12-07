@@ -10,7 +10,7 @@
 @block-padding-vertical:                        50px;
 @block-padding-vertical-large:                  100px;
 
-@block-large-padding-vertical-large:            200px;
+@block-large-padding-vertical-large:            150px;
 
 @block-default-background:                      @global-background;
 
@@ -39,6 +39,16 @@
 // ========================================================================
 
 .hook-block-misc() {
+
+    /* Desktop and bigger */
+    @media (min-width: 2000px) {
+
+        .uk-block-large {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+    }
 
     /*
      * Adjust padding between equal colored blocks
