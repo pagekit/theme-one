@@ -14,7 +14,7 @@
         <div class="uk-form-row">
             <label class="uk-form-label">{{ 'Logo Contrast' | trans }}</label>
             <div class="uk-form-controls uk-form-width-large">
-                <input-image source="{{@ config.logo_contrast }}"></input-image>
+                <input-image :source.sync="config.logo_contrast"></input-image>
                 <p class="uk-form-help-block">{{ 'Select an alternative logo which looks great on images.' | trans }}</p>
             </div>
         </div>
@@ -34,16 +34,14 @@
         },
 
         data: function () {
-            return window.$theme;
+            return _.extend({config: {}}, window.$theme);
         },
 
         events: {
 
             save: function() {
 
-                var config = _.omit(this.config, ['positions', 'menus', 'widget']);
-
-                this.$http.post('admin/system/settings/config', {name: this.name, config: config}).error(function (data) {
+                this.$http.post('admin/system/settings/config', {name: this.name, config: this.config}).error(function (data) {
                     this.$notify(data, 'danger');
                 });
 

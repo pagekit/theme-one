@@ -2,26 +2,28 @@
 
     <div class="uk-form-horizontal">
 
-        <div class="uk-form-row" v-if="node.type === 'page'">
-            <span class="uk-form-label">{{ 'Title' | trans }}</span>
-            <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" v-model="node.theme.title_hide"> {{ 'Hide Title' | trans }}</label>
+        <template v-if="node.type === 'page'">
+            <div class="uk-form-row">
+                <span class="uk-form-label">{{ 'Title' | trans }}</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <label><input type="checkbox" v-model="node.theme.title_hide"> {{ 'Hide Title' | trans }}</label>
+                </div>
             </div>
-        </div>
 
-        <div class="uk-form-row" v-if="node.type === 'page'">
-            <span class="uk-form-label">{{ 'Title Size' | trans }}</span>
-            <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" v-model="node.theme.title_large"> {{ 'Extra large title.' | trans }}</label>
+            <div class="uk-form-row">
+                <span class="uk-form-label">{{ 'Title Size' | trans }}</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <label><input type="checkbox" v-model="node.theme.title_large"> {{ 'Extra large title.' | trans }}</label>
+                </div>
             </div>
-        </div>
 
-        <div class="uk-form-row" v-if="node.type === 'page'">
-            <span class="uk-form-label">{{ 'Alignment' | trans }}</span>
-            <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" v-model="node.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
+            <div class="uk-form-row">
+                <span class="uk-form-label">{{ 'Alignment' | trans }}</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <label><input type="checkbox" v-model="node.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
+                </div>
             </div>
-        </div>
+        </template>
 
         <div class="uk-form-row">
             <label for="form-class" class="uk-form-label">{{ 'HTML Class' | trans }}</label>
@@ -49,7 +51,7 @@
                 <p class="uk-form-controls-condensed uk-margin-bottom">
                     <label><input type="checkbox" v-model="node.theme.navbar_transparent"> {{ 'Transparent navbar as overlay' | trans }}</label>
                 </p>
-                <p class="uk-form-controls-condensed uk-form-width-large"><input-image source="{{@ node.theme.hero_image }}"></input-image></p>
+                <p class="uk-form-controls-condensed uk-form-width-large"><input-image :source.sync="node.theme.hero_image"></input-image></p>
                 <p class="uk-form-help-block">{{ 'Select a background image for the hero position.' | trans }}</p>
             </div>
         </div>
