@@ -1,8 +1,9 @@
 # Changelog
 
-## WIP
+## 0.10.0
 
 ### Changed
+- Switched to Vuejs 1.0
 - Nicer code and blockquotes style
 - Better block-large padding for large screens
 - Updated button font-size and transition
