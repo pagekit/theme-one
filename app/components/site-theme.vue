@@ -41,8 +41,8 @@
 
             save: function() {
 
-                this.$http.post('admin/system/settings/config', {name: this.name, config: this.config}).error(function (data) {
-                    this.$notify(data, 'danger');
+                this.$http.post('admin/system/settings/config', {name: this.name, config: this.config}).catch(function (res) {
+                    this.$notify(res.data, 'danger');
                 });
 
             }
