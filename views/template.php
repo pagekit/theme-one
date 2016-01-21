@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php if ($params['page_description'] ) : ?>
+          <meta name="description" content="<?= $params['page_description'] ?>">
+        <?php endif ?>
+        <?php if ($params['key_words'] ) : ?>
+            <meta name="keywords" content="<?= $params['key_words'] ?>">
+        <?php endif ?>
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
         <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox']) ?>
