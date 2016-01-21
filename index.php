@@ -42,7 +42,9 @@ return [
         'hero_image' => '',
         'hero_viewport' => '',
         'hero_contrast' => '',
-        'navbar_transparent' => ''
+        'navbar_transparent' => '',
+        'page_description'  => '',
+        'key_words' => ''
 
     ],
 
