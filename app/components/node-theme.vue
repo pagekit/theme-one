@@ -31,6 +31,20 @@
                 <input id="form-class" class="uk-form-width-large" type="text" v-model="node.theme.html_class">
             </div>
         </div>
+        
+        <div class="uk-form-row">
+            <label for="form-class" class="uk-form-label">{{ 'Page Description' | trans }}</label>
+            <div class="uk-form-controls">
+                <input id="form-class" class="uk-form-width-large" type="text" v-model="node.theme.page_description">
+            </div>
+        </div>
+
+        <div class="uk-form-row">
+            <label for="form-class" class="uk-form-label">{{ 'Key Words' | trans }}</label>
+            <div class="uk-form-controls">
+                <input id="form-class" class="uk-form-width-large" type="text" v-model="node.theme.key_words">
+            </div>
+        </div>
 
         <div class="uk-form-row">
             <span class="uk-form-label">{{ 'Sidebar' | trans }}</span>
@@ -76,3 +90,4 @@
     window.Site.components['node-theme'] = module.exports;
 
 </script>
+
