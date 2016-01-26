@@ -42,6 +42,7 @@ return [
         'hero_image' => '',
         'hero_viewport' => '',
         'hero_contrast' => '',
+        'hero_parallax' => '',
         'navbar_transparent' => ''
 
     ],
@@ -102,7 +103,8 @@ return [
 
             $classes = [
                 'navbar' => 'tm-navbar',
-                'hero' => ''
+                'hero' => '',
+                'parallax' => ''
             ];
 
             $sticky = [
@@ -134,6 +136,10 @@ return [
 
                 } else {
                     $sticky['clsinactive'] = 'tm-navbar-transparent';
+                }
+
+                if ($event['hero_parallax']) {
+                    $classes['parallax'] = 'data-uk-parallax="{bg: \'-400\'}"';
                 }
 
             }

@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Added
+- Optional parallax effect for hero image
+
 ## 0.10.0
 
 ### Changed

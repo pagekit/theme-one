@@ -48,8 +48,11 @@
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="node.theme.hero_contrast"> {{ 'Invert colors' | trans }}</label>
                 </p>
-                <p class="uk-form-controls-condensed uk-margin-bottom">
+                <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="node.theme.navbar_transparent"> {{ 'Transparent navbar as overlay' | trans }}</label>
+                </p>
+                <p class="uk-form-controls-condensed uk-margin-bottom">
+                    <label><input type="checkbox" v-model="node.theme.hero_parallax"> {{ 'Enable parallax effect' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed uk-form-width-large"><input-image :source.sync="node.theme.hero_image"></input-image></p>
                 <p class="uk-form-help-block">{{ 'Select a background image for the hero position.' | trans }}</p>
