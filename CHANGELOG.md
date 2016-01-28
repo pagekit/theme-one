@@ -3,7 +3,8 @@
 ## WIP
 
 ### Added
-- Optional parallax effect for hero image
+- Added optional parallax effect for hero image
+- Added optional off-canvas logo
 
 ## 0.10.0
 

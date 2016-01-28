@@ -19,6 +19,14 @@
             </div>
         </div>
 
+        <div class="uk-form-row">
+            <label class="uk-form-label">{{ 'Logo Off-canvas' | trans }}</label>
+            <div class="uk-form-controls uk-form-width-large">
+                <input-image :source.sync="config.logo_offcanvas"></input-image>
+                <p class="uk-form-help-block">{{ 'Select an optional logo for the off-canvas menu.' | trans }}</p>
+            </div>
+        </div>
+
     </div>
 
 </template>

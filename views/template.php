@@ -118,6 +118,14 @@
         <div id="offcanvas" class="uk-offcanvas">
             <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 
+                <?php if ($params['logo_offcanvas']) : ?>
+                <div class="uk-panel uk-text-center">
+                    <a href="<?= $view->url()->get() ?>">
+                        <img src="<?= $this->escape($params['logo_offcanvas']) ?>" alt="">
+                    </a>
+                </div>
+                <?php endif ?>
+
                 <?php if ($view->menu()->exists('offcanvas')) : ?>
                     <?= $view->menu('offcanvas', ['class' => 'uk-nav-offcanvas']) ?>
                 <?php endif ?>
