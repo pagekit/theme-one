@@ -43,7 +43,10 @@ return [
         'hero_viewport' => '',
         'hero_contrast' => '',
         'hero_parallax' => '',
-        'navbar_transparent' => ''
+        'navbar_transparent' => '',
+        'top_style' => 'uk-block-muted',
+        'main_style' => 'uk-block-default',
+        'bottom_style' => 'uk-block-muted'
 
     ],
 

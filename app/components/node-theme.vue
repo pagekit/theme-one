@@ -59,6 +59,36 @@
             </div>
         </div>
 
+        <div class="uk-form-row">
+            <label for="form-top-style" class="uk-form-label">{{ 'Top Style' | trans }}</label>
+            <div class="uk-form-controls">
+                <select id="form-top-style" class="uk-form-width-large" v-model="node.theme.top_style">
+                    <option value="uk-block-default">{{ 'Default' | trans }}</option>
+                    <option value="uk-block-muted">{{ 'Muted' | trans }}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="uk-form-row">
+            <label for="form-top-style" class="uk-form-label">{{ 'Main Style' | trans }}</label>
+            <div class="uk-form-controls">
+                <select id="form-top-style" class="uk-form-width-large" v-model="node.theme.main_style">
+                    <option value="uk-block-default">{{ 'Default' | trans }}</option>
+                    <option value="uk-block-muted">{{ 'Muted' | trans }}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="uk-form-row">
+            <label for="form-top-style" class="uk-form-label">{{ 'Bottom Style' | trans }}</label>
+            <div class="uk-form-controls">
+                <select id="form-top-style" class="uk-form-width-large" v-model="node.theme.bottom_style">
+                    <option value="uk-block-default">{{ 'Default' | trans }}</option>
+                    <option value="uk-block-muted">{{ 'Muted' | trans }}</option>
+                </select>
+            </div>
+        </div>
+
     </div>
 
 </template>

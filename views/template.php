@@ -58,7 +58,7 @@
         <?php endif; ?>
 
         <?php if ($view->position()->exists('top')) : ?>
-        <div id="tm-top" class="tm-top uk-block uk-block-muted">
+        <div id="tm-top" class="tm-top uk-block <?= $params['top_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -69,7 +69,7 @@
         </div>
         <?php endif; ?>
 
-        <div id="tm-main" class="tm-main uk-block uk-block-default">
+        <div id="tm-main" class="tm-main uk-block <?= $params['main_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
@@ -91,7 +91,7 @@
         </div>
 
         <?php if ($view->position()->exists('bottom')) : ?>
-        <div id="tm-bottom" class="tm-bottom uk-block uk-block-muted">
+        <div id="tm-bottom" class="tm-bottom uk-block <?= $params['bottom_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
