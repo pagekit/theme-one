@@ -6,6 +6,7 @@
 - Added optional parallax effect for hero image
 - Added style option for top, main and bottom sections
 - Added optional off-canvas logo
+- Added translations
 
 ## 0.10.0
 
