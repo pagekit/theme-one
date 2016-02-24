@@ -1,6 +1,6 @@
 # Changelog
 
-## WIP
+## 0.10.1 (February 24, 2016)
 
 ### Added
 - Added optional parallax effect for hero image
@@ -8,7 +8,7 @@
 - Added optional off-canvas logo
 - Added translations
 
-## 0.10.0
+## 0.10.0 (December 15, 2015)
 
 ### Changed
 - Switched to Vuejs 1.0
