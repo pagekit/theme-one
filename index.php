@@ -42,7 +42,11 @@ return [
         'hero_image' => '',
         'hero_viewport' => '',
         'hero_contrast' => '',
-        'navbar_transparent' => ''
+        'hero_parallax' => '',
+        'navbar_transparent' => '',
+        'top_style' => 'uk-block-muted',
+        'main_style' => 'uk-block-default',
+        'bottom_style' => 'uk-block-muted'
 
     ],
 
@@ -69,7 +73,8 @@ return [
      */
     'config' => [
 
-        'logo_contrast' => ''
+        'logo_contrast' => '',
+        'logo_offcanvas' => ''
 
     ],
 
@@ -102,7 +107,8 @@ return [
 
             $classes = [
                 'navbar' => 'tm-navbar',
-                'hero' => ''
+                'hero' => '',
+                'parallax' => ''
             ];
 
             $sticky = [
@@ -136,6 +142,10 @@ return [
                     $sticky['clsinactive'] = 'tm-navbar-transparent';
                 }
 
+            }
+
+            if ($event['hero_parallax'] && $view->position()->exists('hero') && $event['hero_image']) {
+                $classes['parallax'] = 'data-uk-parallax="{bg: \'-400\'}"';
             }
 
             if ($event['hero_contrast'] && $event['hero_image']) {

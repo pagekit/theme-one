@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
-        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox']) ?>
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox',  'uikit-parallax']) ?>
     </head>
     <body>
 
@@ -46,7 +46,7 @@
         <?php endif ?>
 
         <?php if ($view->position()->exists('hero')) : ?>
-        <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?>>
+        <div id="tm-hero" class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle <?= $params['classes.hero'] ?>" <?= $params['hero_image'] ? "style=\"background-image: url('{$view->url($params['hero_image'])}');\"" : '' ?> <?= $params['classes.parallax'] ?>>
             <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -58,7 +58,7 @@
         <?php endif; ?>
 
         <?php if ($view->position()->exists('top')) : ?>
-        <div id="tm-top" class="tm-top uk-block uk-block-muted">
+        <div id="tm-top" class="tm-top uk-block <?= $params['top_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -69,7 +69,7 @@
         </div>
         <?php endif; ?>
 
-        <div id="tm-main" class="tm-main uk-block uk-block-default">
+        <div id="tm-main" class="tm-main uk-block <?= $params['main_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
@@ -91,7 +91,7 @@
         </div>
 
         <?php if ($view->position()->exists('bottom')) : ?>
-        <div id="tm-bottom" class="tm-bottom uk-block uk-block-muted">
+        <div id="tm-bottom" class="tm-bottom uk-block <?= $params['bottom_style'] ?>">
             <div class="uk-container uk-container-center">
 
                 <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -117,6 +117,14 @@
         <?php if ($view->position()->exists('offcanvas') || $view->menu()->exists('offcanvas')) : ?>
         <div id="offcanvas" class="uk-offcanvas">
             <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+
+                <?php if ($params['logo_offcanvas']) : ?>
+                <div class="uk-panel uk-text-center">
+                    <a href="<?= $view->url()->get() ?>">
+                        <img src="<?= $this->escape($params['logo_offcanvas']) ?>" alt="">
+                    </a>
+                </div>
+                <?php endif ?>
 
                 <?php if ($view->menu()->exists('offcanvas')) : ?>
                     <?= $view->menu('offcanvas', ['class' => 'uk-nav-offcanvas']) ?>
