@@ -16,6 +16,6 @@
         "image": "image.jpg"
     },
     "archive": {
-        "exclude": ["!/css"]
+        "exclude": ["!/css", "!/app"]
     }
 }
