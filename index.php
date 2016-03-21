@@ -99,7 +99,7 @@ return [
         /**
          * Custom markup calculations based on theme settings
          */
-        'view.init' => function ($event, $view) use ($app) {
+        'view.layout' => function ($event, $view) use ($app) {
 
             if ($app->isAdmin()) {
                 return;
