@@ -16,6 +16,6 @@
         "image": "image.jpg"
     },
     "archive": {
-        "exclude": ["!/css", "!/app"]
+        "exclude": ["node_modules", "!/app", "!/css", "/app/assets", "gulpfile.js", "bower.js", "package.js"]
     }
 }
