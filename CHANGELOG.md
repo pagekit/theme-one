@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Changed
+- Use view.init event for theme params
+
 ## 0.10.1 (February 24, 2016)
 
 ### Added
