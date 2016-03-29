@@ -23,7 +23,7 @@ gulp.task('default', ['compile']);
 gulp.task('compile', function () {
 
     return gulp.src('less/theme.less', {base: __dirname})
-        .pipe(less({ compress: true, relativeUrls: true }))
+        .pipe(less({compress: true}))
         .pipe(header(banner, { data: require('./package.json') }))
         .pipe(rename(function (file) {
             // the compiled less file should be stored in the css/ folder instead of the less/ folder
