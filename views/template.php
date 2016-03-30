@@ -75,7 +75,6 @@
                 <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
 
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-medium-3-4' : 'uk-width-1-1'; ?>">
-                        <?= $view->render('messages') ?>
                         <?= $view->render('content') ?>
                     </main>
 
