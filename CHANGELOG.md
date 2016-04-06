@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Changed
+- Made the logo height responsive
+
 ## 0.11.0 (February 24, 2016)
 
 ### Changed
