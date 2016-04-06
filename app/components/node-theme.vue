@@ -40,7 +40,7 @@
         </div>
 
         <div class="uk-form-row">
-            <label class="uk-form-label">{{ 'Hero Image' | trans }}</label>
+            <label class="uk-form-label">Hero {{ 'Position' | trans }}</label>
             <div class="uk-form-controls uk-form-controls-text">
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="node.theme.hero_viewport"> {{ 'Full viewport height' | trans }}</label>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="uk-form-row">
-            <label for="form-top-style" class="uk-form-label">{{ 'Top Style' | trans }}</label>
+            <label for="form-top-style" class="uk-form-label">Top {{ 'Position' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-top-style" class="uk-form-width-large" v-model="node.theme.top_style">
                     <option value="uk-block-default">{{ 'Default' | trans }}</option>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="uk-form-row">
-            <label for="form-main-style" class="uk-form-label">{{ 'Main Style' | trans }}</label>
+            <label for="form-main-style" class="uk-form-label">Main {{ 'Position' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-main-style" class="uk-form-width-large" v-model="node.theme.main_style">
                     <option value="uk-block-default">{{ 'Default' | trans }}</option>
@@ -80,12 +80,13 @@
         </div>
 
         <div class="uk-form-row">
-            <label for="form-bottom-style" class="uk-form-label">{{ 'Bottom Style' | trans }}</label>
+            <label for="form-bottom-style" class="uk-form-label">Bottom {{ 'Position' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-bottom-style" class="uk-form-width-large" v-model="node.theme.bottom_style">
                     <option value="uk-block-default">{{ 'Default' | trans }}</option>
                     <option value="uk-block-muted">{{ 'Muted' | trans }}</option>
                 </select>
+                <p class="uk-form-help-block uk-margin">{{ 'Note: Position settings only work if you publish a widget in that position.' | trans }}</p>
             </div>
         </div>
 
