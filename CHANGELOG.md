@@ -2,6 +2,9 @@
 
 ## WIP
 
+### Added
+- Added page title fallback if no logo is picked
+
 ### Changed
 - Made the logo height responsive
 
