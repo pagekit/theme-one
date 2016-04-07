@@ -1,6 +1,6 @@
 # Changelog
 
-## WIP
+## 0.11.1 (April 7, 2016)
 
 ### Added
 - Added page title fallback if no logo is picked
