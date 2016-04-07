@@ -21,7 +21,7 @@
                             <img class="tm-logo uk-responsive-height" src="<?= $this->escape($params['logo']) ?>" alt="">
                             <img class="tm-logo-contrast uk-responsive-height" src="<?= ($params['logo_contrast']) ? $this->escape($params['logo_contrast']) : $this->escape($params['logo']) ?>" alt="">
                         <?php else : ?>
-                            <?= $app->config('system/site')->get('title') ?>
+                            <?= $params['title'] ?>
                         <?php endif ?>
                     </a>
 
