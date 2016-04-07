@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.11.1 (April 7, 2016)
+
+### Added
+- Added page title fallback if no logo is picked
+
+### Changed
+- Made the logo height responsive
+
 ## 0.11.0 (February 24, 2016)
 
 ### Changed
