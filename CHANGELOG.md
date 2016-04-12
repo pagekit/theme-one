@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Changed
+- Changed article divider
+
 ## 0.11.1 (April 7, 2016)
 
 ### Added
