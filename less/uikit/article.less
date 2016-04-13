@@ -64,7 +64,18 @@
 
 .hook-article-misc() {
 
-    .uk-article-title a:hover { border-bottom: 1px solid @global-color; }
+    .uk-article + .uk-article {
+        padding-top: @article-margin-top;
+        border-top: 1px solid @global-border;
+    }
+
+    /* Tablet and bigger */
+    @media (min-width: @breakpoint-medium) {
+        .uk-article + .uk-article {
+            margin-top: (@article-margin-top + 50px);
+            padding-top: (@article-margin-top + 50px);
+        }
+    }
 
     .uk-article .uk-subnav a:hover,
     .uk-article .uk-subnav a:focus { text-decoration: underline; }

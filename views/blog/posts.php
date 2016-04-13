@@ -18,7 +18,7 @@
         <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
 
         <div class="uk-margin-large-top">
-            <ul class="uk-subnav">
+            <ul class="uk-subnav uk-margin-bottom-remove">
 
                 <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
                 <li><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a></li>
