@@ -1,5 +1,5 @@
 {
-  "name": "pagekit-theme-one",
+  "name": "pagekit-theme",
   "scripts": {
     "install": "bower install && gulp",
     "archive": "gulp && webpack -p && composer archive --format=zip"
