@@ -12,7 +12,7 @@ var gulp       = require('gulp'),
     rename     = require('gulp-rename');
 
 // banner for the css files
-var banner = "/*! <%= data.title %> <%= data.version %> | (c) 2014 Pagekit | MIT License */\n";
+var banner = "/*! <%= data.title %> <%= data.version %> | <%= data.copyright %> | <%= data.license %> License */\n";
 
 gulp.task('default', ['compile']);
 
@@ -24,7 +24,7 @@ gulp.task('compile', function () {
 
     return gulp.src('less/theme.less', {base: __dirname})
         .pipe(less({compress: true}))
-        .pipe(header(banner, { data: require('./package.json') }))
+        .pipe(header(banner, { data: require('./composer.json') }))
         .pipe(rename(function (file) {
             // the compiled less file should be stored in the css/ folder instead of the less/ folder
             file.dirname = file.dirname.replace('less', 'css');

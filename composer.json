@@ -1,10 +1,11 @@
 {
     "name": "pagekit/theme-one",
     "type": "pagekit-theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "One",
     "description": "Pagekit's default theme.",
     "license": "MIT",
+    "copyright": "(c) 2016 Pagekit",
     "authors": [
         {
             "name": "Pagekit",
@@ -16,6 +17,6 @@
         "image": "image.jpg"
     },
     "archive": {
-        "exclude": ["node_modules", "!/app", "!/css", "/app/assets", "gulpfile.js", "bower.js", "package.js"]
+        "exclude": ["!/app", "!/css", "/app/assets"]
     }
 }
